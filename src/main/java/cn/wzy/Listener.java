@@ -8,9 +8,7 @@ import org.springframework.kafka.support.ProducerListener;
 public class Listener implements ProducerListener<Long, String> {
 
   public void onSuccess(String topic, Integer partition, Long key, String value, RecordMetadata recordMetadata) {
-    System.out.println("====success====");
-    System.out.println("topic " + topic);
-    System.out.println("====success====");
+//    System.out.println("====send success====topic " + topic);
   }
 
   @Override
